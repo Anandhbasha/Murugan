@@ -52,6 +52,7 @@
     grid-column: span 3;
     background-color: red;
     display: grid;
+    transition: 5s;
 }
 .sidebar{
     grid-row: span 2;
@@ -75,4 +76,30 @@
     align-items: center;
     color: white;
     font-size: 2em;
+}
+
+.Header:hover{
+    /* transform: translate(100px,50px); */
+    /* transform: scale(1.1); */
+    transform: rotate(45deg);
+    transition: 5s;
+}
+
+@media (max-width:800px){
+ .Header{
+    /* display: none; */
+    background-color: black;
+
+ }   
+}
+
+/*  */
+
+:root{
+    --primaryColor:#0000;
+    --primaryColorOption:#999900;
+}
+
+nav{
+    background-color: var(--primaryColor);
 }
