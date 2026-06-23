@@ -235,7 +235,7 @@
 // switch
 
 
-let arr = [10,20,30,40,50]
+// let arr = [10,20,30,40,50]
 
 // let total = 0
 
@@ -250,12 +250,66 @@ let arr = [10,20,30,40,50]
 // }while(10>15)
 
 // for
-//for of
-for(let x of arr){
-    console.log(x);    
-}
-// for in 
-for(let x in arr){
-    console.log(arr[x]);    
-}
+// //for of
+// for(let x of arr){
+//     console.log(x);    
+// }
+// // for in 
+// for(let x in arr){
+    // console.log(arr[x]);    
+// }
 // foreach
+
+//shift
+let arr = [60,80,77,99,61]
+arr.shift()
+console.log(arr);
+// unshift
+arr.unshift(100)
+console.log(arr);
+// slice
+const newArr = arr.slice(1,4)
+console.log(newArr);
+// splice
+arr.splice(2,2,205)
+console.log(arr);
+
+// split
+let text = "Hello Js"
+var newtext = text.split(" ")
+console.log(newtext);
+// join
+console.log(newtext.join(" "));
+
+
+// sort
+let array = [30,44,55,12,88,42]
+array.sort()
+console.log(array);
+
+// map
+array.map((item)=>console.log(item))
+//reduce
+let total = array.reduce((x,y)=>x+y) //44,30
+console.log(total);
+
+// filter
+let even =array.filter((item)=>item%2==0)
+console.log(even);
+
+// includes
+console.log(array.includes(31));
+
+// indexof
+console.log(array.indexOf(88));
+// set
+let abc = new Set()
+
+abc.add(100)
+abc.add(80)
+abc.add(80)
+abc.add(100)
+abc.add(110)
+abc.add(110)
+abc.add(120)
+console.log(abc);
